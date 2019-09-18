@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
+using DependencyInjectionExample.Models;
 
 namespace DependencyInjectionExample.Models
 {
@@ -33,6 +34,8 @@ namespace DependencyInjectionExample.Models
                 PublishDate = new DateTime(2008, 6, 13)
             });
         }
+
+        public DbSet<DependencyInjectionExample.Models.User> User { get; set; }
     }
     
 }

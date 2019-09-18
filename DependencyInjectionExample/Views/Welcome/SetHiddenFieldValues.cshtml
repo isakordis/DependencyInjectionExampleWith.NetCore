@@ -1,0 +1,41 @@
+﻿@model User
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+
+
+@Html.DisplayFor(model => model.Id)
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.age)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Name)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayFor(model => model.Name)
+            </th>
+
+
+            <th>
+                @Html.DisplayFor(model => model.age)
+            </th>
+        </tr>
+    </thead>
+
+
+</table>
+<form asp-action="Post">
+    <input id="Id" name="Id" type="submit"> Kayıt
+</form>
+
+

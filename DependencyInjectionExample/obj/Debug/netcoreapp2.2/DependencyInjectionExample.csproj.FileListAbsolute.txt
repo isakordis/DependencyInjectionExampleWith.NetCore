@@ -39,3 +39,8 @@ C:\Users\MSI\source\repos\DependencyInjectionExample\DependencyInjectionExample\
 C:\Users\MSI\source\repos\DependencyInjectionExample\DependencyInjectionExample\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_Authors.g.cshtml.cs
 C:\Users\MSI\source\repos\DependencyInjectionExample\DependencyInjectionExample\obj\Debug\netcoreapp2.2\Razor\Views\Welcome\Get.g.cshtml.cs
 C:\Users\MSI\source\repos\DependencyInjectionExample\DependencyInjectionExample\obj\Debug\netcoreapp2.2\Razor\Views\Welcome\Index.g.cshtml.cs
+C:\Users\MSI\source\repos\DependencyInjectionExample\DependencyInjectionExample\obj\Debug\netcoreapp2.2\Razor\Views\Welcome\HiddenData.g.cshtml.cs
+C:\Users\MSI\source\repos\DependencyInjectionExample\DependencyInjectionExample\obj\Debug\netcoreapp2.2\Razor\Views\Welcome\SetHiddenFieldValues.g.cshtml.cs
+C:\Users\MSI\source\repos\DependencyInjectionExample\DependencyInjectionExample\obj\Debug\netcoreapp2.2\Razor\Views\TempData\Second.g.cshtml.cs
+C:\Users\MSI\source\repos\DependencyInjectionExample\DependencyInjectionExample\obj\Debug\netcoreapp2.2\Razor\Views\TempData\Third.g.cshtml.cs
+C:\Users\MSI\source\repos\DependencyInjectionExample\DependencyInjectionExample\obj\Debug\netcoreapp2.2\Razor\Views\TempData\First.g.cshtml.cs

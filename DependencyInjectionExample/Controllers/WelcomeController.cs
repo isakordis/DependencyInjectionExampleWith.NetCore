@@ -42,10 +42,24 @@ namespace DependencyInjectionExample.Controllers
             return View(newUser);
         }
 
-        [HttpPost]
-        public IActionResult HiddenData(IFormCollection keyValues)
+      
+        [HttpGet]
+        public IActionResult SetHiddenFieldValues()
         {
-            var id = keyValues["Id"];
+            User user = new User()
+            {
+                Id=10,
+                Name="Isa",
+                age=23
+            };
+            return View(user);
+        }
+
+        [HttpPost]
+        public IActionResult SetHiddenFieldValues(IFormCollection keyValues)
+        {
+            var key = keyValues["Id"];
+
             return View();
         }
     }
