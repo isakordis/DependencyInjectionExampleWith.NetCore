@@ -12947,11 +12947,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\MSI\\source\\repos\\DependencyInjectionExample\\DependencyInjectionExample\\DependencyInjectionExample.csproj",
+      "projectUniqueName": "C:\\Users\\MSI\\Documents\\GitHub\\DependencyInjectionExampleWith.NetCore\\DependencyInjectionExample\\DependencyInjectionExample.csproj",
       "projectName": "DependencyInjectionExample",
-      "projectPath": "C:\\Users\\MSI\\source\\repos\\DependencyInjectionExample\\DependencyInjectionExample\\DependencyInjectionExample.csproj",
+      "projectPath": "C:\\Users\\MSI\\Documents\\GitHub\\DependencyInjectionExampleWith.NetCore\\DependencyInjectionExample\\DependencyInjectionExample.csproj",
       "packagesPath": "C:\\Users\\MSI\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\MSI\\source\\repos\\DependencyInjectionExample\\DependencyInjectionExample\\obj\\",
+      "outputPath": "C:\\Users\\MSI\\Documents\\GitHub\\DependencyInjectionExampleWith.NetCore\\DependencyInjectionExample\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

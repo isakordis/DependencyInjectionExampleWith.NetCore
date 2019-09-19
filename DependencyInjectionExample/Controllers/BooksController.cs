@@ -17,32 +17,33 @@ namespace DependencyInjectionExample.Controllers
         {
             _context = context;
         }
-
+        //Aşağıdaki gibi de Route işlemleri Uygulayabiliriz.
+        //[Route("")]
+        //[Route("Home")]
+        //[Route("Home/Index")]
         // GET: Books
         public async Task<IActionResult> Index()
         {
             return View(await _context.Book.ToListAsync());
         }
 
-        // GET: Books/Details/5
+        //[Route("Home/Details/{id:int}")]
         public async Task<IActionResult> Details(int? id)
         {
-            if (id == null)
-            {
-                return NotFound();
-            }
+            //Aşağıdaki işlemle sadeece ekrana id de bastırabılırız.
+            //Gerekli View kısmı Details.cshtml de asagıdakı kodda gorunmekte.
+            //ViewBag.Id = id;
+            //return View();
 
-            var book = await _context.Book
-                .FirstOrDefaultAsync(m => m.id == id);
-            if (book == null)
-            {
-                return NotFound();
-            }
+            if (id == null) return NotFound();
+            var book = await _context.Book.FirstOrDefaultAsync(sa => sa.id == id);
+            if (book == null) return NotFound();
 
             return View(book);
         }
 
         // GET: Books/Create
+        //[Route("Home/Create")]
         public IActionResult Create()
         {
             return View();
@@ -65,6 +66,7 @@ namespace DependencyInjectionExample.Controllers
         }
 
         // GET: Books/Edit/5
+        //[Route("Home/Edit/{id:int}")]
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)
@@ -116,6 +118,7 @@ namespace DependencyInjectionExample.Controllers
         }
 
         // GET: Books/Delete/5
+        //[Route("Home/Delete/{id:int}")]
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
