@@ -9,6 +9,12 @@ namespace DependencyInjectionExample.Controllers
 {
     public class BookController : Controller
     {
+        private readonly DependencyInjectionExampleContext _context;
+
+        public BookController(DependencyInjectionExampleContext context)
+        {
+            _context = context;
+        }
         public IActionResult Index()
         {
 
@@ -35,12 +41,14 @@ namespace DependencyInjectionExample.Controllers
         }
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Create(Book book)
+        public IActionResult Create([Bind("id,Title,Genre,Price,PublishDate")] Book book)
         {
 
             if (ModelState.IsValid)
             {
-                return RedirectToAction("Index");
+                _context.Add(book);
+                 _context.SaveChangesAsync();
+                return RedirectToAction(nameof(Index));
             }
             return View(book);
 

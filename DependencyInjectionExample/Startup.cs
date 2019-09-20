@@ -40,6 +40,8 @@ namespace DependencyInjectionExample
                     options.UseSqlServer(Configuration.GetConnectionString("DependencyInjectionExampleContext")));
 
             services.AddSession();
+            services.AddScoped<IBookDI<Book>,BookDI>();
+            services.AddTransient<BooksLookupService>();
            }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
